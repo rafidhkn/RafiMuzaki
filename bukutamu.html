@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+        <div id="head">
+            <div class="kepala-gambar kiri" >
+              <img src="gmbr/SMA_Negeri_8_Yogyakarta.png" alt="kiri" width="100px" height="100px">
+            </div>
+            <div class="kepalatengah">
+            <h1 >Selamat Datang</h1>
+            <h1 >SMA NEGERI 8 YOGYAKARTA</h1>
+        </div>
+        <div class="kepala-gambar kanan" >
+            <img src="gmbr/LOGO-OSIS-SMA-FONS-VITAE-2-MARSUDIRINI.png" alt="kanan" width="100px" height="100px">
+        </div>
+        </div>
+        <div id="menu">
+            <a href="bukutamu.html">Buku Tamu</a>
+            <a href="album.html">Album</a>
+            <a href="prestasi.html">Prestasi</a>
+            <a href="profiljurusan.html">Profil Sekolah</a>
+            <a href="index.html">Beranda</a>
+        </div>
+        <div class="isi">
+            <form id="guestForm">
+                <h2 align="center">Buku Tamu</h2>
+                <input type="text" id="name" placeholder="Nama" required>
+                <input type="email" id="email" placeholder="Email Anda" required>
+                <input type="datetime-local" id="Waktu"  placeholder="Waktu" required>
+                <textarea id="message" placeholder="Pesan" required></textarea>
+                <button type="submit">Kirim</button>
+                <div id="output"></div>
+              </form>
+            </div>
+          <script>
+            document.getElementById('guestForm').addEventListener('submit', function(e) {
+              e.preventDefault();
+              const nama = document.getElementById('name').value;
+              const email = document.getElementById('email').value;
+              const waktu=document.getElementById('Waktu').value;
+              const pesan = document.getElementById('message').value;
+              const output = `
+                <b>Nama:</b> ${nama}<br>
+                <b>Email:</b> ${email}<br>
+                <b>Waktu:</b> ${waktu}<br>
+                <b>Pesan:</b> ${pesan}<br>
+              `;
+              document.getElementById('output').innerHTML = output;
+              document.getElementById('output').style.display = 'block';
+          
+              this.reset();
+            });
+          </script>
+            </div>
+        </div>
+        </div>
+       <div class="bawah">
+            <div class="bawah-i kiri">
+             <h3>SMKN 8 Yogyakarta</h3>
+             <p>Jl. Sidobali No.1, Muja Muju</p>
+                <p>Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55165</p>
+                <p>(0274)513493</p>
+                <p>https://sman8yogya.sch.id/</p>
+            </div>
+            <div class="bawahtengah">
+             <h3>Media Sosial</h3>
+             <a href=https://youtube.com/@smanegeri8yogyakartaoffici881?si=wessbrPRjB2F0DiC>Youtube</a>
+             <a href=https://www.instagram.com/sman8yogyakarta?igsh=MXB2NnhuM2VpaHNuZQ==>Instagram</a>
+             <a href=https://www.tiktok.com/@delayotaevents?_t=ZS-8wcdH1qQiHg&_r=1>Tiktok</a>
+            </div>
+            <div class="bawah-1 kanan">
+                <h3>Maps SMA_Negeri_8_Yogyakarta</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.0540349038165!2d110.3928100740499!3d-7.800444677428884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57669d43fe55%3A0x75fae1bb400d4da5!2sSMA%20Negeri%208%20Yogyakarta!5e1!3m2!1sen!2sid!4v1748086851130!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="footer-container">
+                <p>© 2025 SMA NEGRI 8 YOGYAKARTA</p>
+                <p>Made  by RAFI <picture>
+                    <source media="(min-width: )" srcset="">
+                    <img src="" alt="">
+                </picture></p>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
